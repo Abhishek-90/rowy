@@ -14,6 +14,10 @@ const SideDrawerField = lazy(
     import("./SideDrawerField" /* webpackChunkName: "SideDrawerField-Image" */)
 );
 
+const Settings = lazy(
+  () => import("./Settings" /* webpackChunkName: "SideDrawerField-Image" */)
+);
+
 export const config: IFieldConfig = {
   type: FieldType.image,
   name: "Image",
@@ -28,6 +32,7 @@ export const config: IFieldConfig = {
   }),
   SideDrawerField,
   contextMenuActions: ContextMenuActions,
+  settings: Settings,
 };
 export default config;
 
