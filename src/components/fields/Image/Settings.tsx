@@ -6,7 +6,10 @@ import Checkbox from "@mui/material/Checkbox";
 export default function Settings({ onChange, config }: ISettingsProps) {
   return (
     <FormGroup>
-      <FormControlLabel control={<Checkbox defaultChecked />} label="Label" />
+      <FormControlLabel
+        control={<Checkbox defaultChecked />}
+        label="Compress Image"
+      />
     </FormGroup>
   );
 }
